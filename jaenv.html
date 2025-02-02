@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Management Solutions</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            padding: 0;
+        }
+
+        .nav {
+            height: 80px;
+            background: linear-gradient(90deg, #2c6e49, #4caf50);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: rgb(146, 146, 189);
+            border-radius: 5px;
+        }
+
+        .dropdown_menue {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #375a7f;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown_menue ul {
+            margin: 10;
+            display: block;
+        }
+
+        .dropdown_menue ul li {
+            padding: 10px;
+            width: 400px;
+        }
+
+        .dropdown_menue ul li a {
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .dropdown_menue ul li a:hover {
+            background-color:  rgb(66, 207, 108);
+        }
+
+        .nav li:hover .dropdown_menue {
+            display: block;
+        }
+
+        .nav .brand {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+        }
+
+        .txt {
+            height: 80px;
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .txt h2 {
+            font-size: 2rem;
+            color: #2c6e49;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column; 
+            gap: 30px;
+            margin: 20px 50px;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1 1 100%; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 25px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+            background: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #2c6e49;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .pa {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #333;
+            width: 90%;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .txt h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav a {
+                font-size: 1rem;
+            }
+
+            .section {
+                margin: 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="brand">Jadara Environmental Solutions</div>
+        <ul>
+            <li><a href="jahome.html">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown_menue">
+                    <ul>
+                        <li><a href="jaservices.html">Organic Waste Solutions</a></li>
+                        <li><a href="jahaz.html">Hazardous Waste Solutions</a></li>
+                        <li><a href="jaenv.html">Environmental Management Solutions</a></li>
+                        <li><a href="jawa.html">Water Treatment Solutions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="jaaboutus.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="txt">
+        <h2>Environmental Management Solutions</h2>
+    </div>
+
+    <div class="pa">
+        <p>Environmental projects frequently call for rigorous analyses and a complete understanding of tested technology that can reduce both time and cost. A multidisciplinary team of environmental engineers has been assembled to provide cutting-edge solutions, delivering high-quality services in a variety of fields.</p>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <h2>Environmental Compliance Audit</h2>
+            <p>Assess the environmental performance and ensure compliance with laws and regulations.</p>
+        </div>
+        <div class="card">
+            <h2>Environmental Impact Assessment</h2>
+            <p>Evaluate the effects of projects or developments on the environment to ensure sustainable decisions.</p>
+        </div>
+        <div class="card">
+            <h2>Environmental Site Assessment</h2>
+            <p>Determine contamination risks in commercial and industrial properties before transactions.</p>
+        </div>
+        <div class="card">
+            <h2>Baseline Environmental Assessment</h2>
+            <p>A Baseline Environmental Assessment (BEA) provides a snapshot of the environmental conditions of a property at the time of acquisition.</p>
+        </div>
+        <div class="card">
+            <h2>Environmental Noise & Vibration Monitoring</h2>
+            <p>Monitor noise and vibrations to ensure worker health and compliance with local and international regulations.</p>
+        </div>
+        <div class="card">
+            <h2>Third Party Environmental Auditing</h2>
+            <p>Conduct third-party audits to evaluate environmental management systems and compliance.</p>
+        </div>
+        <div class="card">
+            <h2>Marine Water Testing</h2>
+            <p>Analyze seawater samples to assess water quality and detect potential hazards to human health and the environment.</p>
+        </div>
+        <div class="card">
+            <h2>Soil and Groundwater Testing</h2>
+            <p>Test soil and groundwater for contaminants to assess risks to human health and the environment.</p>
+        </div>
+        <div class="card">
+            <h2>Noise Monitoring</h2>
+            <p>Monitor noise levels to ensure compliance with regulations and safeguard workers' hearing health.</p>
+        </div>
+        <div class="card">
+            <h2>Ambient Temperature & Noise Monitoring</h2>
+            <p>Monitor ambient temperature and noise to ensure safe working environments.</p>
+        </div>
+        <div class="card">
+            <h2>Site Assessment</h2>
+            <p>Gather data to assess the risk of contamination on a site and ensure safe development.</p>
+        </div>
+        <div class="card">
+            <h2>Regulatory Compliance</h2>
+            <p>Ensure that all operations and activities adhere to local, national, and international regulations.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
